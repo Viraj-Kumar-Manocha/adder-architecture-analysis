@@ -1,24 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 07.06.2026 15:39:33
-// Design Name: 
-// Module Name: cla_64bit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
+//64 bit cla adder using 4- 16 bit cla adders and propagation logic
 
 module cla_64bit(input [63:0]A,
                  input [63:0]B,
