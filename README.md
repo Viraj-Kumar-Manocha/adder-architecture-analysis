@@ -109,6 +109,8 @@ adder-architecture-analysis/
 │   └── waveforms/                       # Simulation waveform captures
 │       └── 64bit_adders_waveform.png
 │
+├── LICENSE
+│
 └── README.md
 ```
 
