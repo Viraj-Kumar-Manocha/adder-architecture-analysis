@@ -48,19 +48,19 @@ a0  b0         a1  b1         a2  b2          a3  b3
 **Carry Lookahead Adder (CLA)** — generate (G) and propagate (P) signals are computed for every bit in parallel, and a lookahead logic block computes every carry directly from the inputs, breaking the ripple dependency:
 
 ```
-        a0 b0   a1 b1   a2 b2   a3 b3
-         │ │     │ │     │ │     │ │
-         ▼ ▼     ▼ ▼     ▼ ▼     ▼ ▼
-        G/P     G/P     G/P     G/P
+       a0 b0    a1 b1    a2 b2    a3 b3
+        │ │      │ │      │ │      │ │
+        ▼ ▼      ▼ ▼      ▼ ▼      ▼ ▼
+        G/P      G/P      G/P      G/P
          │        │        │        │
          └────────┴───┬────┴────────┘
-                       ▼
+                      ▼
              Carry Lookahead Logic
-        (computes c1, c2, c3, c4 directly)
-                       │
-        ┌──────┬───────┼───────┬──────┐
-        ▼      ▼        ▼      ▼      ▼
-       sum0   sum1     sum2   sum3   cout
+       (computes c1, c2, c3, c4 directly)
+                      │
+       ┌──────┬───────┼───────┬──────┐
+       ▼      ▼       ▼       ▼      ▼
+      sum0   sum1    sum2    sum3   cout
 ```
 
 > Wider adders (16-bit, 64-bit) are built hierarchically from these same principles — either full ripple chains or block/hierarchical carry lookahead — which is exactly what makes the delay-scaling comparison meaningful.
